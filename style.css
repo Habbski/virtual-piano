@@ -1,0 +1,100 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+#piano {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: brown;
+  width: 100%;
+  height: auto;
+
+  border: 4px solid black;
+  padding: 1vw;
+  padding-top: 8vh;
+
+  box-shadow: 10px 10px;
+}
+
+#blackKeysContainer {
+  position: absolute;
+  left: 5vw;
+}
+
+.black-keys {
+  background-color: black;
+  width: 2vw;
+  height: 13vh;
+
+  margin-right: 2vw;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 2px solid black;
+
+  z-index: 0;
+}
+
+.black-keys-hover:hover {background-color: rgb(47, 131, 220)}
+
+.black-keys-hover:active {
+  background-color: rgb(70, 139, 212);
+  box-shadow: 0 2px rgb(25, 25, 25);
+}
+
+.white-keys {
+  position: static;
+  width: 4vw;
+  height: 24vh;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 3px solid black;
+
+  z-index: 1;
+}
+
+.white-keys:hover {background-color: rgb(47, 131, 220)}
+
+.white-keys:active {
+  background-color: rgb(70, 139, 212);
+  box-shadow: 0 2px rgb(25, 25, 25);
+}
+
+.transparent-btn {
+  background: transparent;
+  border: none;
+}
+
+.text {
+  position: absolute;
+  margin-bottom: 40%;
+}
+
+.black-lines {
+  position: absolute;
+  border: 1px solid black;
+}
+
+.one {
+  top: 14%;
+  width: 60%;
+}
+
+.two {
+  top: 11%;
+  width: 70%;
+}
+
+.three {
+  top: 8%;
+  width: 80%;
+}
+
+.four {
+  top: 5%;
+  width: 90%;
+}
