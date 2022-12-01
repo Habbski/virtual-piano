@@ -64,3 +64,31 @@ const addWhiteKeys = () => {
 
 addBlackKeys();
 addWhiteKeys();
+
+addEventListener("keydown", (e) => {
+  console.log(e.key);
+  // White keys
+  if(e.key === "a") playPianoKey(`./pianoKeys/key-white0.mp3`);
+  else if(e.key === "s") playPianoKey(`./pianoKeys/key-white1.mp3`);
+  else if(e.key === "d") playPianoKey(`./pianoKeys/key-white2.mp3`);
+  else if(e.key === "f") playPianoKey(`./pianoKeys/key-white3.mp3`);
+  else if(e.key === "g") playPianoKey(`./pianoKeys/key-white4.mp3`);
+  else if(e.key === "h") playPianoKey(`./pianoKeys/key-white5.mp3`);
+  else if(e.key === "j") playPianoKey(`./pianoKeys/key-white6.mp3`);
+  else if(e.key === "k") playPianoKey(`./pianoKeys/key-white7.mp3`);
+  else if(e.key === "l") playPianoKey(`./pianoKeys/key-white8.mp3`);
+  else if(e.key === "ø") playPianoKey(`./pianoKeys/key-white9.mp3`);
+  else if(e.key === "æ") playPianoKey(`./pianoKeys/key-white10.mp3`);
+  else if(e.key === "'") playPianoKey(`./pianoKeys/key-white11.mp3`);
+
+  // Black keys
+  if(e.key === "w") playPianoKey(`./pianoKeys/key-black0.mp3`);
+  else if(e.key === "e") playPianoKey(`./pianoKeys/key-black1.mp3`);
+  else if(e.key === "t") playPianoKey(`./pianoKeys/key-black2.mp3`);
+  else if(e.key === "y") playPianoKey(`./pianoKeys/key-black3.mp3`);
+  else if(e.key === "u") playPianoKey(`./pianoKeys/key-black4.mp3`);
+  else if(e.key === "o") playPianoKey(`./pianoKeys/key-black5.mp3`);
+  else if(e.key === "p") playPianoKey(`./pianoKeys/key-black6.mp3`);
+  else if(e.key === "¨") playPianoKey(`./pianoKeys/key-black8.mp3`);
+
+})
